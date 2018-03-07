@@ -70,6 +70,8 @@ public class HomeController {
 
 
 
+
+
     @PostMapping("/dayname")
     public String processDayName( @Valid DayName dayName , BindingResult result, HttpServletRequest request,Model model){
 
@@ -86,10 +88,10 @@ public class HomeController {
 
 
 
-        System.out.println(userdate);
+        //System.out.println(userdate);
 
         LocalDate localUserDate =  LocalDate.parse(userdate);
-        System.out.println(localUserDate.getDayOfMonth());
+      //  System.out.println(localUserDate.getDayOfMonth());
 
 
 

@@ -44,6 +44,8 @@ Female Day Name:
 </ul>
 your zodiac sign is :
 <p th:text="${zodiac}"></p>
+<a th:href="@{/{sunsign}(sunsign=${zodiac})}">Click here to get a detail about your horoscope</a>
+
 
 </body>
 </html>
